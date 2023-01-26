@@ -3,7 +3,7 @@ import javax.servlet.*;
 import javax.crypto.*;
 import java.security.*;
 
-public class Main extends HttpServlet {
+public class Main {
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
@@ -12,7 +12,7 @@ public class Main extends HttpServlet {
     String name = scanner.nextLine();
 
     System.out.println("Bienvenido, " + name + "!");
-    
+    /*
     // BAD: DES is a weak algorithm 
 Cipher des = Cipher.getInstance("DES");
 cipher.init(Cipher.ENCRYPT_MODE, secretKeySpec);
@@ -39,18 +39,19 @@ Cipher des = Cipher.getInstance("AES");
 
     KeyGenerator keyGen = KeyGenerator.getInstance("AES");
     keyGen.init(64); // BAD: Key size is less than 128
-    
+    */
     
   }
   
-  protected void doGet(HttpServletRequest request, HttpServletResponse response)
+ /* 
+ protected void doGet(HttpServletRequest request, HttpServletResponse response)
 	throws ServletException, IOException {
 		// BAD: a request parameter is written directly to the Servlet response stream
 		response.getWriter().print(
 				"The page \"" + request.getParameter("page") + "\" was not found.");
 
 	}
-  
+  */
   
   
 }
