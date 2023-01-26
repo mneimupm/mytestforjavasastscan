@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.Random;
+import java.util.*;
 
 public class Main {
 private static final String USERNAME = "admin";
