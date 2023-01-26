@@ -27,18 +27,7 @@ private static final String USERNAME = "admin";
     public boolean compareValues(int value1, int value2) {
         return value1 == value2;
     }
-	Object getField(Object obj, String name) throws NoSuchFieldError {
-  Class clazz = obj.getClass();
-  while (clazz != null) {
-    for (Field f : clazz.getDeclaredFields()) {
-      if (f.getName().equals(name)) {
-        f.setAccessible(true);
-        return f.get(obj);
-      }
-    }
-  }
-  throw new NoSuchFieldError(name);
-}
+	
   public static void main(String[] args) throws IOException {
 	  long data;
 
