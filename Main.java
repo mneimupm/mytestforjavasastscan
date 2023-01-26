@@ -12,6 +12,7 @@ private static final String USERNAME = "admin";
         } else {
             System.out.println("Access denied.");
         }
+	    System.out.format("First string: %s Second string: %s", "Hello world");
     }
 
     public void vulnerableSQL(String userId) {
