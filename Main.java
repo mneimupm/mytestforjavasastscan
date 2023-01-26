@@ -1,7 +1,4 @@
 import java.util.Scanner;
-import javax.servlet.*;
-import javax.crypto.*;
-import java.security.*;
 
 public class Main {
 
